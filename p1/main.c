@@ -7,7 +7,7 @@ static int gauss(int n) {
 }
 
 int main(int argc, char* argv[]) {
-    printf("Project Euler Problem 1\nAuthor: Chris Kolimago\n\n");
+    printf("Project Euler Problem 1\nAuthor: Chris\n\n");
 
     if (argc < 2) {
         printf("Usage: main n\n");

@@ -1,0 +1,20 @@
+Project Euler Problem 1
+Chris
+
+Find the sum of all the multiuples of 3 or 5 below n (1000)
+
+Ex. n = 10; sum = 3+5+6+9 = 23
+
+Step 1: If n is a multiple of 3 or 5, decrement by 1 (this will come in handy later)
+Step 2: Find the sum of all multiples of 3
+- First compute n/3. This is the number of factors of 3 less than n
+- Next take the Gauss summation of these factors. For example if n/3 = 2, this means there 
+are 2 factors which will be 3 and 6.
+- Finally, multiple the Gauss sum by 3. Since the factors increase evenly by 3 each time
+this allows us to compute the sum of these factors such that [3+6]=[3(1+2)].
+Step 3: Do the same as step 2 but using 5 instead of 3
+Step 4: Do the same as step 2 but using 15 instead of 3
+Step 5: The final sum will be the sum of the factors of 3 + the sum of the factors of 5 - 
+the sum of the factors of 15 (this will allows us to handle repeats)
+
+The sum of all numbers from 1 to 1000, divisible by 3 and 5 is: 233168
